@@ -1,0 +1,19 @@
+---
+name: punishment
+version: 0.0.1
+main: punishment\Main
+api: 5.0.0
+commands:
+  punish:
+    description: "処罰を追加"
+    permission: punishment.ops.command
+  unpunish:
+    description: "処罰の撤回"
+    permission: punishment.ops.command
+  punishform:
+    description: "処罰フォーム"
+    permission: punishment.ops.command
+permissions:
+  punishment.ops.command:
+    default: op
+...
