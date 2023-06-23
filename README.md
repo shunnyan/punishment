@@ -43,6 +43,7 @@ use punishment\api\punishmentAPI;
 
 punishmentAPI::Ban("PlayerID","理由","時効までの秒数");
 punishmentAPI::Mute("PlayerID","理由","時効までの秒数");
+//時効までの秒数がいらない(永久処罰)にしたい場合は("PlayerID","理由")で大丈夫です。
 punishmentAPI::unBan("PlayerID");
 punishmentAPI::unMute("PlayerID");
 ```
