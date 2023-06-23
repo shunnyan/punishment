@@ -49,7 +49,8 @@ punishmentAPI::unMute("PlayerID");
 ```
 
 # 実例
-![BAN例](https://github.com/shunnyan/punishment/assets/80146606/6f366ab9-d62a-45a1-83a2-5863e41ed53c)
+![BAN例](https://github.com/shunnyan/punishment/assets/80146606/61ae9456-7726-4d2a-952d-bd45a7dbe0d5)
+
 
 # 注意
 中身のコードが汚いのは重々承知しています。本当に見にくくてすいません。
