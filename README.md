@@ -50,6 +50,8 @@ punishmentAPI::unMute("PlayerID");
 
 # 実例
 ![BAN例](https://github.com/shunnyan/punishment/assets/80146606/61ae9456-7726-4d2a-952d-bd45a7dbe0d5)
+![FORM](https://github.com/shunnyan/punishment/assets/80146606/50ffd6ea-8c3e-49e8-9f5c-d85c804681bd)
+
 
 
 # 注意
