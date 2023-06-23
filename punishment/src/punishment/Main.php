@@ -26,8 +26,8 @@ class Main extends PluginBase implements Listener{
 	public function onEnable() : void{
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 		date_default_timezone_set('Asia/Tokyo');
-		if(!file_exists($this->getDataFolder())){ //Configファイルを入れるフォルダがあるかを確認
-			mkdir($this->getDataFolder(), 0744, true); // なければフォルダを作成
+		if(!file_exists($this->getDataFolder())){
+			mkdir($this->getDataFolder(), 0744, true);
 		}
 		self::$scheduler = $this->getScheduler();
 		self::$config_datafolder = $this->getDataFolder();
@@ -110,7 +110,6 @@ class Main extends PluginBase implements Listener{
 				$sender->sendMessage("§c無効な時間形式です $howtouse");
 				return false;
 			}
-			//var_dump("\nプレイヤーID: $target \n処罰名: $punishment \n理由: $reason \n時間指定: $time");
 			if($punishment == "ban"){
 				if(Ban::Ban($target,$reason,$time)){
 					$sender->sendMessage("§f$target §aをBANしました。(理由:§f $reason §a)");

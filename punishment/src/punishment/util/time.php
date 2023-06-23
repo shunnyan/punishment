@@ -16,12 +16,12 @@ class time{
 	}
 
 	public static function parseTime(string $duration): int|bool {
-		$pattern = '/(\d+)([d|h|m|s])/'; // 数字と時間単位の正規表現パターン
+		$pattern = '/(\d+)([d|h|m|s])/';
 		$matches = [];
 		$totalTime = 0;
 
 		if (!preg_match_all($pattern, $duration, $matches, PREG_SET_ORDER)) {
-			return false; // パターンにマッチしない場合は無効な形式
+			return false;
 		}
 
 		foreach ($matches as $match) {

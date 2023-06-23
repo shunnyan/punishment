@@ -133,7 +133,7 @@ class opendata implements Form{
 	}
 
 	public function jsonSerialize() : array{
-		$text = "\nプレイヤー情報\n処罰方法: ";
+		$text = "\n---< プレイヤー情報 >---\nプレイヤーID: $this->name(Xuid: " . (playerData::getxuid($this->name) ?? "不明") . ")\n処罰方法: ";
 		if($this->punish == "ban"){
 
 			$data = Ban::isBanned(playerData::getxuid($this->name) ?? $this->name);
