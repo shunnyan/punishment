@@ -9,6 +9,7 @@ use punishment\type\Mute;
 use punishment\util\playerData;
 
 class punish_control implements Form{
+	public $player;
 	public function __construct(Player $players){
 		$this->player = $players;
 	}
@@ -34,6 +35,8 @@ class punish_control implements Form{
 	}
 }
 class banlist implements Form{
+	public $player;
+	public $list;
 	public function __construct(Player $players){
 		$this->player = $players;
 	}
@@ -65,6 +68,8 @@ class banlist implements Form{
 	}
 }
 class mutelist implements Form{
+	public $player;
+	public $list;
 	public function __construct(Player $players){
 		$this->player = $players;
 	}
@@ -96,6 +101,9 @@ class mutelist implements Form{
 	}
 }
 class opendata implements Form{
+	public $player;
+	public $name;
+	public $punish;
 	public function __construct(Player $players,$name,$punish){
 		$this->player = $players;
 		$this->name = $name;
